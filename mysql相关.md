@@ -1,7 +1,7 @@
-#1.mysql 外网无法访问
+# 1.mysql 外网无法访问
 
 
-###判断Mysql的端口状态
+### 判断Mysql的端口状态
 ```
 netstat -apn |grep 3306 
 
@@ -18,7 +18,7 @@ sudo /etc/init.d/mysql restart
 netstat -apn |grep 3306 
 此时应为：tcp6 0 0 :::3306 :::* LISTEN -
 ```
-###修改用户表
+### 修改用户表
 当远程访问出现not allowed的提示消息时，说明远程用户无权限，则需要修改用户表：
  
 1. 登录数据库 
